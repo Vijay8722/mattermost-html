@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattermost Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Channels</h2>
+            <ul>
+                <li><a href="#"># general</a></li>
+                <li><a href="#"># random</a></li>
+            </ul>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2># general</h2>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <div class="avatar"><img src="images/avatar1.png" alt="User 1"></div>
+                    <div class="message-content">
+                        <strong>User 1</strong>
+                        <p>Hey, this is a message!</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="avatar"><img src="images/avatar2.png" alt="User 2"></div>
+                    <div class="message-content">
+                        <strong>User 2</strong>
+                        <p>Hi there, this is another message.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="message-input">
+                <input type="text" placeholder="Type a message..." id="messageBox">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
